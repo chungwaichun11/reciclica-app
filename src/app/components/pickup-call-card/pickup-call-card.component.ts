@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pickup-call-card',
@@ -14,8 +15,11 @@ export class PickupCallCardComponent  implements OnInit {
   @Input() createAt: string = "";
   @Input() notes: string = "";
   @Input() value: string = "";
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
 
+  goAllPickUpCalls() {
+    this.router.navigate(['pickup-calls'])
+  }
 }

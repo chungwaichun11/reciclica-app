@@ -20,7 +20,7 @@
 
   <app-pickup-call-card [hasHeader]="true" [hasFooter]="true" status="On Hold" updateAt="03/04/2024 17:14:00" createAt="02/04/2024" notes="Hi, I am Eric and you can call me Jacky"></app-pickup-call-card>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="createNewPickUpCall()">
     <ion-fab-button color="success">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
